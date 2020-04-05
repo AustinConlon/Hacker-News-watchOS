@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBD81AF724395935003DD974 /* Hacker News WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBD81AF624395935003DD974 /* Hacker News WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBD81AFD24395935003DD974 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD81AFB24395935003DD974 /* Interface.storyboard */; };
+		FBD81AFF24395936003DD974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD81AFE24395936003DD974 /* Assets.xcassets */; };
+		FBD81B0624395936003DD974 /* Hacker News WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBD81B0524395936003DD974 /* Hacker News WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBD81B0B24395936003DD974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD81B0A24395936003DD974 /* ContentView.swift */; };
+		FBD81B0D24395936003DD974 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD81B0C24395936003DD974 /* HostingController.swift */; };
+		FBD81B0F24395936003DD974 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD81B0E24395936003DD974 /* ExtensionDelegate.swift */; };
+		FBD81B1124395936003DD974 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD81B1024395936003DD974 /* ComplicationController.swift */; };
+		FBD81B1324395937003DD974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD81B1224395937003DD974 /* Assets.xcassets */; };
+		FBD81B1624395937003DD974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD81B1524395937003DD974 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBD81AF824395935003DD974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD81AEC24395935003DD974 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD81AF524395935003DD974;
+			remoteInfo = "Hacker News WatchKit App";
+		};
+		FBD81B0724395936003DD974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD81AEC24395935003DD974 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD81B0424395936003DD974;
+			remoteInfo = "Hacker News WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBD81B1D24395937003DD974 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBD81B0624395936003DD974 /* Hacker News WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD81B2124395937003DD974 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FBD81AF724395935003DD974 /* Hacker News WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FBD81AF224395935003DD974 /* Hacker News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacker News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD81AF624395935003DD974 /* Hacker News WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacker News WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD81AFC24395935003DD974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FBD81AFE24395936003DD974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD81B0024395936003DD974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD81B0524395936003DD974 /* Hacker News WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hacker News WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD81B0A24395936003DD974 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBD81B0C24395936003DD974 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		FBD81B0E24395936003DD974 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FBD81B1024395936003DD974 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FBD81B1224395937003DD974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD81B1524395937003DD974 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBD81B1724395937003DD974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBD81B0224395936003DD974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBD81AEB24395935003DD974 = {
+			isa = PBXGroup;
+			children = (
+				FBD81AFA24395935003DD974 /* Hacker News WatchKit App */,
+				FBD81B0924395936003DD974 /* Hacker News WatchKit Extension */,
+				FBD81AF324395935003DD974 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBD81AF324395935003DD974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBD81AF224395935003DD974 /* Hacker News.app */,
+				FBD81AF624395935003DD974 /* Hacker News WatchKit App.app */,
+				FBD81B0524395936003DD974 /* Hacker News WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBD81AFA24395935003DD974 /* Hacker News WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FBD81AFB24395935003DD974 /* Interface.storyboard */,
+				FBD81AFE24395936003DD974 /* Assets.xcassets */,
+				FBD81B0024395936003DD974 /* Info.plist */,
+			);
+			path = "Hacker News WatchKit App";
+			sourceTree = "<group>";
+		};
+		FBD81B0924395936003DD974 /* Hacker News WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBD81B0A24395936003DD974 /* ContentView.swift */,
+				FBD81B0C24395936003DD974 /* HostingController.swift */,
+				FBD81B0E24395936003DD974 /* ExtensionDelegate.swift */,
+				FBD81B1024395936003DD974 /* ComplicationController.swift */,
+				FBD81B1224395937003DD974 /* Assets.xcassets */,
+				FBD81B1724395937003DD974 /* Info.plist */,
+				FBD81B1424395937003DD974 /* Preview Content */,
+			);
+			path = "Hacker News WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FBD81B1424395937003DD974 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBD81B1524395937003DD974 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBD81AF124395935003DD974 /* Hacker News */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD81B2224395937003DD974 /* Build configuration list for PBXNativeTarget "Hacker News" */;
+			buildPhases = (
+				FBD81AF024395935003DD974 /* Resources */,
+				FBD81B2124395937003DD974 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD81AF924395935003DD974 /* PBXTargetDependency */,
+			);
+			name = "Hacker News";
+			productName = "Hacker News";
+			productReference = FBD81AF224395935003DD974 /* Hacker News.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		FBD81AF524395935003DD974 /* Hacker News WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD81B1E24395937003DD974 /* Build configuration list for PBXNativeTarget "Hacker News WatchKit App" */;
+			buildPhases = (
+				FBD81AF424395935003DD974 /* Resources */,
+				FBD81B1D24395937003DD974 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD81B0824395936003DD974 /* PBXTargetDependency */,
+			);
+			name = "Hacker News WatchKit App";
+			productName = "Hacker News WatchKit App";
+			productReference = FBD81AF624395935003DD974 /* Hacker News WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FBD81B0424395936003DD974 /* Hacker News WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD81B1A24395937003DD974 /* Build configuration list for PBXNativeTarget "Hacker News WatchKit Extension" */;
+			buildPhases = (
+				FBD81B0124395936003DD974 /* Sources */,
+				FBD81B0224395936003DD974 /* Frameworks */,
+				FBD81B0324395936003DD974 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hacker News WatchKit Extension";
+			productName = "Hacker News WatchKit Extension";
+			productReference = FBD81B0524395936003DD974 /* Hacker News WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBD81AEC24395935003DD974 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Austin Conlon";
+				TargetAttributes = {
+					FBD81AF124395935003DD974 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					FBD81AF524395935003DD974 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					FBD81B0424395936003DD974 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = FBD81AEF24395935003DD974 /* Build configuration list for PBXProject "Hacker News" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBD81AEB24395935003DD974;
+			productRefGroup = FBD81AF324395935003DD974 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD81AF124395935003DD974 /* Hacker News */,
+				FBD81AF524395935003DD974 /* Hacker News WatchKit App */,
+				FBD81B0424395936003DD974 /* Hacker News WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBD81AF024395935003DD974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD81AF424395935003DD974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD81AFF24395936003DD974 /* Assets.xcassets in Resources */,
+				FBD81AFD24395935003DD974 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD81B0324395936003DD974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD81B1624395937003DD974 /* Preview Assets.xcassets in Resources */,
+				FBD81B1324395937003DD974 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBD81B0124395936003DD974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD81B0D24395936003DD974 /* HostingController.swift in Sources */,
+				FBD81B1124395936003DD974 /* ComplicationController.swift in Sources */,
+				FBD81B0B24395936003DD974 /* ContentView.swift in Sources */,
+				FBD81B0F24395936003DD974 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBD81AF924395935003DD974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD81AF524395935003DD974 /* Hacker News WatchKit App */;
+			targetProxy = FBD81AF824395935003DD974 /* PBXContainerItemProxy */;
+		};
+		FBD81B0824395936003DD974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD81B0424395936003DD974 /* Hacker News WatchKit Extension */;
+			targetProxy = FBD81B0724395936003DD974 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBD81AFB24395935003DD974 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBD81AFC24395935003DD974 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBD81B1824395937003DD974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBD81B1924395937003DD974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBD81B1B24395937003DD974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hacker News WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = AV84QJNZ49;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Hacker News WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Austin-Conlon.Hacker-News.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		FBD81B1C24395937003DD974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hacker News WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = AV84QJNZ49;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Hacker News WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Austin-Conlon.Hacker-News.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		FBD81B1F24395937003DD974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AV84QJNZ49;
+				IBSC_MODULE = Hacker_News_WatchKit_Extension;
+				INFOPLIST_FILE = "Hacker News WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Austin-Conlon.Hacker-News.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		FBD81B2024395937003DD974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AV84QJNZ49;
+				IBSC_MODULE = Hacker_News_WatchKit_Extension;
+				INFOPLIST_FILE = "Hacker News WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Austin-Conlon.Hacker-News.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		FBD81B2324395937003DD974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AV84QJNZ49;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Austin-Conlon.Hacker-News";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FBD81B2424395937003DD974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AV84QJNZ49;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Austin-Conlon.Hacker-News";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBD81AEF24395935003DD974 /* Build configuration list for PBXProject "Hacker News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD81B1824395937003DD974 /* Debug */,
+				FBD81B1924395937003DD974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD81B1A24395937003DD974 /* Build configuration list for PBXNativeTarget "Hacker News WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD81B1B24395937003DD974 /* Debug */,
+				FBD81B1C24395937003DD974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD81B1E24395937003DD974 /* Build configuration list for PBXNativeTarget "Hacker News WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD81B1F24395937003DD974 /* Debug */,
+				FBD81B2024395937003DD974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD81B2224395937003DD974 /* Build configuration list for PBXNativeTarget "Hacker News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD81B2324395937003DD974 /* Debug */,
+				FBD81B2424395937003DD974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBD81AEC24395935003DD974 /* Project object */;
+}
