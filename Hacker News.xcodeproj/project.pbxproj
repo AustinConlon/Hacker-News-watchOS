@@ -17,6 +17,7 @@
 		FBD81B1124395936003DD974 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD81B1024395936003DD974 /* ComplicationController.swift */; };
 		FBD81B1324395937003DD974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD81B1224395937003DD974 /* Assets.xcassets */; };
 		FBD81B1624395937003DD974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD81B1524395937003DD974 /* Preview Assets.xcassets */; };
+		FBD81B2724395EF4003DD974 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD81B2624395EF4003DD974 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		FBD81B1224395937003DD974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD81B1524395937003DD974 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FBD81B1724395937003DD974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD81B2624395EF4003DD974 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		FBD81B0924395936003DD974 /* Hacker News WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FBD81B2524395EDD003DD974 /* Models */,
 				FBD81B0A24395936003DD974 /* ContentView.swift */,
 				FBD81B0C24395936003DD974 /* HostingController.swift */,
 				FBD81B0E24395936003DD974 /* ExtensionDelegate.swift */,
@@ -137,6 +140,14 @@
 				FBD81B1524395937003DD974 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBD81B2524395EDD003DD974 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBD81B2624395EF4003DD974 /* Endpoint.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				FBD81B1124395936003DD974 /* ComplicationController.swift in Sources */,
 				FBD81B0B24395936003DD974 /* ContentView.swift in Sources */,
 				FBD81B0F24395936003DD974 /* ExtensionDelegate.swift in Sources */,
+				FBD81B2724395EF4003DD974 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
