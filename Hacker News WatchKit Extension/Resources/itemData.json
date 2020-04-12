@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Alan Kay is still waiting for his dream to come true",
+        "id": 1,
+        "type": "story",
+        "url": "https://www.fastcompany.com/40435064/what-alan-kay-thinks-about-the-iphone-and-technology-now"
+    },
+    {
+        "title": "Chris Lattner Interview on the Accidental Tech Podcast",
+        "id": 2,
+        "type": "story",
+        "url": "https://atp.fm/episodes/371"
+    },
+    {
+        "title": "General Magic is a film about the ‘90s startup that imagined the smartphone",
+        "id": 3,
+        "type": "story",
+        "url": "https://www.theverge.com/2018/4/22/17233362/general-magic-movie-review-documentary-silicon-valley-tribeca-2018"
+    },
+]

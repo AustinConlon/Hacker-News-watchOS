@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB034B832442941F007EA77D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB034B822442941F007EA77D /* Story.swift */; };
+		FB034B862442A629007EA77D /* itemData.json in Resources */ = {isa = PBXBuildFile; fileRef = FB034B852442A629007EA77D /* itemData.json */; };
 		FBD81AF724395935003DD974 /* Hacker News WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBD81AF624395935003DD974 /* Hacker News WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FBD81AFD24395935003DD974 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD81AFB24395935003DD974 /* Interface.storyboard */; };
 		FBD81AFF24395936003DD974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD81AFE24395936003DD974 /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB034B822442941F007EA77D /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		FB034B852442A629007EA77D /* itemData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = itemData.json; sourceTree = "<group>"; };
 		FBD81AF224395935003DD974 /* Hacker News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacker News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD81AF624395935003DD974 /* Hacker News WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacker News WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD81AFC24395935003DD974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -90,6 +94,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB034B812442940A007EA77D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FBD81B2624395EF4003DD974 /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FB034B842442A564007EA77D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB034B852442A629007EA77D /* itemData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FBD81AEB24395935003DD974 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +147,7 @@
 				FBD81B0C24395936003DD974 /* HostingController.swift */,
 				FBD81B0E24395936003DD974 /* ExtensionDelegate.swift */,
 				FBD81B1024395936003DD974 /* ComplicationController.swift */,
+				FB034B842442A564007EA77D /* Resources */,
 				FBD81B1224395937003DD974 /* Assets.xcassets */,
 				FBD81B1724395937003DD974 /* Info.plist */,
 				FBD81B1424395937003DD974 /* Preview Content */,
@@ -145,7 +166,8 @@
 		FBD81B2524395EDD003DD974 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FBD81B2624395EF4003DD974 /* Endpoint.swift */,
+				FB034B812442940A007EA77D /* Network */,
+				FB034B822442941F007EA77D /* Story.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB034B862442A629007EA77D /* itemData.json in Resources */,
 				FBD81B1624395937003DD974 /* Preview Assets.xcassets in Resources */,
 				FBD81B1324395937003DD974 /* Assets.xcassets in Resources */,
 			);
@@ -283,6 +306,7 @@
 				FBD81B0B24395936003DD974 /* ContentView.swift in Sources */,
 				FBD81B0F24395936003DD974 /* ExtensionDelegate.swift in Sources */,
 				FBD81B2724395EF4003DD974 /* Endpoint.swift in Sources */,
+				FB034B832442941F007EA77D /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
