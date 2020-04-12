@@ -18,4 +18,11 @@ struct Item: Hashable, Codable {
         case story
         case job
     }
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case url
+        case category = "type"
+    }
 }
